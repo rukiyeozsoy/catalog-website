@@ -1,0 +1,26 @@
+﻿@model Demo.Areas.Admin.Models.AddCaliscoImage
+@{
+    ViewData["Title"] = "AddImage";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<form class="form-group" method="post" enctype="multipart/form-data">
+    <h1>Yeni Model Ekle</h1>
+<br />
+@using (Html.BeginForm("AddCalisco","Calisco",FormMethod.Post))
+{
+    @Html.Label("Model'in Adı")
+    @Html.TextBoxFor(x=>x.Calisco_Name,new {@class="form-control"})
+    @Html.ValidationMessageFor(x=>x.Calisco_Name)
+    <br />
+    
+    <div class="form-group">
+        <label>Model'in Resmi</label>
+        <input type="file" name="Calisco_Image" />
+    </div>
+
+
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+}
+</form>
+

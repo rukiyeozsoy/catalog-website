@@ -1,0 +1,38 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model IPagedList<EntityLayer.Concrete.Cimstone>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
+
+<h1>Cimstone Model Listesi</h1>
+<br />
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Model</th>
+        <th>Resim</th>
+        <th>Sil</th>
+    </tr>
+    @foreach (var item in Model)
+   {
+       <tr>
+           <td>@item.Cimstone_ID</td>
+           <td>@item.Cimstone_Name</td>
+           <td>
+               <img src="@item.Cimstone_Image" class="card-img-top img-fluid" alt="">
+           </td>
+           <td><a href="/Admin/Cimstone/DeleteCimstone/@item.Cimstone_ID/" id="DeleteBtn"
+               onclick="return confirm('Silmek istediğinize emin misiniz');" class="btn btn-danger">Sil</a></td>
+       </tr>
+   }
+</table>
+<a href="/Admin/Cimstone/AddImage/" class="btn btn-primary">Yeni Model</a>
+<br />
+<br />
+@Html.PagedListPager((IPagedList)Model,page=>Url.Action("Index",new{page}))
+

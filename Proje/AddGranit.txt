@@ -1,0 +1,33 @@
+@model EntityLayer.Concrete.Granit
+@{
+    ViewData["Title"] = "AddGranit";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>Yeni Model Ekle</h1>
+<br />
+@using (Html.BeginForm("AddGranit","Granit",FormMethod.Post))
+{
+    @Html.Label("Model'in Adı")
+    @Html.TextBoxFor(x=>x.Granit_Name,new {@class="form-control"})
+    @Html.ValidationMessageFor(x=>x.Granit_Name)
+    <br />
+    
+    @*<div class="form-group">
+        <div class="input-group col-xs-12">
+            <input type="file" class="form-control file-upload-info">
+            <span class="input-group-append">
+                <button class="file-upload-browse btn btn-gradient-primary" type="button"></button>
+            </span>
+        </div>
+    </div>*@
+
+    @*<div class="form-group">
+        <label>Model'in Resmi</label>
+        <input type="file" name="Granit_Image" />
+    </div>*@
+
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+}
+

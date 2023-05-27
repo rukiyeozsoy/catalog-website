@@ -1,0 +1,24 @@
+@model EntityLayer.Concrete.Coante
+@{
+    ViewData["Title"] = "AddCoante";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<h1>Yeni Model Ekle</h1>
+<br />
+@using (Html.BeginForm("AddCoante","Coante",FormMethod.Post))
+{
+    @Html.Label("Model'in Adı")
+    @Html.TextBoxFor(x=>x.Coante_Name,new {@class="form-control"})
+    @Html.ValidationMessageFor(x=>x.Coante_Name)
+    <br />
+    
+    <div class="form-group">
+        <label>Model'in Resmi</label>
+        <input type="file" name="Coante_Image" />
+    </div>
+
+
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+}
+

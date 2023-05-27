@@ -1,0 +1,59 @@
+﻿@model Demo.Areas.Admin.Models.AddGranitImage
+@{
+    ViewData["Title"] = "AddImage";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<form class="form-group" method="post" enctype="multipart/form-data">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Yeni Model Ekle</h4>
+                <br />
+                <div class="forms-sample">
+                    <div class="form-group">
+                        <label for="exampleInputName">Model'in Adı</label>
+                        @Html.TextBoxFor(x=>x.Granit_Name,new{@class="form-control"})
+                    </div>
+                     <div class="form-group">
+                        <label>Model'in Resmi</label>
+                        <input type="file" name="Granit_Image"/>
+                    </div>
+                    <button type="submit" class="btn btn-gradient-primary mr-2">Kaydet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+@*<form class="form-group" method="post" enctype="multipart/form-data">
+    <h1>Yeni Model Ekle</h1>
+<br />
+@using (Html.BeginForm("AddGranit","Granit",FormMethod.Post))
+{
+    @Html.Label("Model'in Adı")
+    @Html.TextBoxFor(x=>x.Granit_Name,new {@class="form-control"})
+    @Html.ValidationMessageFor(x=>x.Granit_Name)
+    <br />
+    
+    <div class="form-group">
+        <div class="input-group col-xs-12">
+            <input type="file" class="form-control file-upload-info">
+            <span class="input-group-append">
+                <button class="file-upload-browse btn btn-gradient-primary" type="button"></button>
+            </span>
+        </div>
+    </div>
+
+
+    @*<div class="form-group">
+        <label>Model'in Resmi</label>
+        <input type="file" name="Granit_Image" />
+    </div>
+
+
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+}
+</form>*@

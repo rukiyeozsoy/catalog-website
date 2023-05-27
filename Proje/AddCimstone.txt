@@ -1,0 +1,27 @@
+@model EntityLayer.Concrete.Cimstone
+@{
+    ViewData["Title"] = "AddCimstone";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<h1>Yeni Model Ekle</h1>
+<br />
+@using (Html.BeginForm("AddCimstone","Cimstone",FormMethod.Post))
+{
+    @Html.Label("Model'in Adı")
+    @Html.TextBoxFor(x=>x.Cimstone_Name,new {@class="form-control"})
+    @Html.ValidationMessageFor(x=>x.Cimstone_Name)
+    <br />
+    @*@Html.Label("Model'in Resmi")
+    @Html.TextBoxFor(x=>x.Belenco_Image,new {@class="form-control"})
+    @Html.ValidationMessageFor(x=>x.Belenco_Image)*@
+    
+    <div class="form-group">
+        <label>Model'in Resmi</label>
+        <input type="file" name="Cimstone_Image" />
+    </div>
+
+
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+}
+

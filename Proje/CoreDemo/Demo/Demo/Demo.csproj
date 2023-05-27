@@ -1,0 +1,85 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\ImageFiles\**" />
+    <Content Remove="wwwroot\ImageFiles\**" />
+    <EmbeddedResource Remove="wwwroot\ImageFiles\**" />
+    <None Remove="wwwroot\ImageFiles\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\CoreBlogTema\images\granit\absolute_black.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\antiqu_labrad.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\baltic_brown.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\bianco_dalmata.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\bianco_sardo_light.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\black_marinace.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\blue_pearl.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\chida_white.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\coral_black.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\coral_mist.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\crema_perla.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\cyrstal_yellow.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\desert_black.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\english_pearl.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\giallo_ornamontale.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\giallo_veneziano_fioritto.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\green_butterfly.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\green_marinace.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\labrador_hq.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\multicolor.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\nero_zimbabwe.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\new_imperial_red.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\perla_white.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\p_white.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\rain_forest_brown.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\rain_forest_green.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\rosavel.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\rosa_beta.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\rosa_marina.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\rosa_minho.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\rosa_porrino.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\rosy_pink.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\santiago_red.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\shivakashy.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\star_galaxy.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\tan_brown.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\verde_fouco.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\verde_guatemala.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\verde_star.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\vermont.webp" />
+    <None Include="wwwroot\CoreBlogTema\images\granit\volga_blue.webp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="10.3.3" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="10.3.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+    <PackageReference Include="X.PagedList" Version="8.1.0" />
+    <PackageReference Include="X.PagedList.Mvc.Core" Version="8.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj" />
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj" />
+  </ItemGroup>
+
+</Project>

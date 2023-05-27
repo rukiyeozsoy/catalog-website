@@ -1,0 +1,26 @@
+﻿@model Demo.Areas.Admin.Models.AddBelencoImage
+@{
+    ViewData["Title"] = "AddImage";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<form class="form-group" method="post" enctype="multipart/form-data">
+    <h1>Yeni Model Ekle</h1>
+<br />
+@using (Html.BeginForm("AddBelenco","Belenco",FormMethod.Post))
+{
+    @Html.Label("Model'in Adı")
+    @Html.TextBoxFor(x=>x.Belenco_Name,new {@class="form-control"})
+    @Html.ValidationMessageFor(x=>x.Belenco_Name)
+    <br />
+    
+    <div class="form-group">
+        <label>Model'in Resmi</label>
+        <input type="file" name="Belenco_Image" />
+    </div>
+
+
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+}
+</form>
+
