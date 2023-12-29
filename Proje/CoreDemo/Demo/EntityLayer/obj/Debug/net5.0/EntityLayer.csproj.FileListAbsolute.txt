@@ -10,3 +10,16 @@ C:\Users\ASUS\Desktop\Proje\CoreDemo\Demo\EntityLayer\obj\Debug\net5.0\EntityLay
 C:\Users\ASUS\Desktop\Proje\CoreDemo\Demo\EntityLayer\obj\Debug\net5.0\refint\EntityLayer.dll
 C:\Users\ASUS\Desktop\Proje\CoreDemo\Demo\EntityLayer\obj\Debug\net5.0\EntityLayer.pdb
 C:\Users\ASUS\Desktop\Proje\CoreDemo\Demo\EntityLayer\obj\Debug\net5.0\ref\EntityLayer.dll
+D:\CSharpCode\Catalon\Proje\CoreDemo\Demo\EntityLayer\bin\Debug\net5.0\EntityLayer.deps.json
+D:\CSharpCode\Catalon\Proje\CoreDemo\Demo\EntityLayer\bin\Debug\net5.0\EntityLayer.dll
+D:\CSharpCode\Catalon\Proje\CoreDemo\Demo\EntityLayer\bin\Debug\net5.0\EntityLayer.pdb
+D:\CSharpCode\Catalon\Proje\CoreDemo\Demo\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.AssemblyReference.cache
+D:\CSharpCode\Catalon\Proje\CoreDemo\Demo\EntityLayer\obj\Debug\net5.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\CSharpCode\Catalon\Proje\CoreDemo\Demo\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfoInputs.cache
+D:\CSharpCode\Catalon\Proje\CoreDemo\Demo\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfo.cs
+D:\CSharpCode\Catalon\Proje\CoreDemo\Demo\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.CoreCompileInputs.cache
+D:\CSharpCode\Catalon\Proje\CoreDemo\Demo\EntityLayer\obj\Debug\net5.0\EntityLayer.sourcelink.json
+D:\CSharpCode\Catalon\Proje\CoreDemo\Demo\EntityLayer\obj\Debug\net5.0\EntityLayer.dll
+D:\CSharpCode\Catalon\Proje\CoreDemo\Demo\EntityLayer\obj\Debug\net5.0\refint\EntityLayer.dll
+D:\CSharpCode\Catalon\Proje\CoreDemo\Demo\EntityLayer\obj\Debug\net5.0\EntityLayer.pdb
+D:\CSharpCode\Catalon\Proje\CoreDemo\Demo\EntityLayer\obj\Debug\net5.0\ref\EntityLayer.dll

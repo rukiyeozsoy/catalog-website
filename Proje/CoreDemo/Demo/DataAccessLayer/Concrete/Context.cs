@@ -13,9 +13,10 @@ namespace DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=Rukiye; database=CoreDB; integrated security=true;");
+            optionsBuilder.UseSqlServer("server=DESKTOP-TDIR7IV\\SQLEXPRESS; database=MermetDb; integrated security=true;");
 
         }
+        public DbSet<Admin> Admins { get; set; }
         public DbSet<About> Abouts { get; set; }
         public DbSet<Belenco> Belencos { get; set; }
         public DbSet<Calisco> Caliscos { get; set; }
@@ -23,5 +24,6 @@ namespace DataAccessLayer.Concrete
         public DbSet<Coante> Coantes { get; set; }
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Granit> Granits { get; set; }
+        
     }
 }

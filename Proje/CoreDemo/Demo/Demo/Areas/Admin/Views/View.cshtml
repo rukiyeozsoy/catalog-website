@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+
+@model Demo.Areas.Admin.Models.LoginModel
+
+<h1>Login</h1>
+
+@if (ViewData.ModelState.IsValid)
+{
+    <text>@Html.ValidationSummary(true, "", new { @class = "text-danger" })</text>
+}
+
+<form asp-action="Login" method="post">
+    <div class="form-group">
+        <label asp-for="UserName">Username:</label>
+        <input asp-for="UserName" class="form-control" />
+        <span asp-validation-for="UserName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Password">Password:</label>
+        <input asp-for="Password" type="password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
