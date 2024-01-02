@@ -26,7 +26,7 @@ namespace Demo
 			services.AddAuthentication(
 				CookieAuthenticationDefaults.AuthenticationScheme)
 				.AddCookie(x => {
-					x.LoginPath = "/Admin/Index"; });
+					x.LoginPath = "/About/Index"; });
 
 			
 			services.AddSession();

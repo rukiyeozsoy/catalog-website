@@ -67,8 +67,9 @@ namespace Demo.Areas.Admin.Controllers
 				var newimagename = Guid.NewGuid() + extension;
 				var location = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/CoreBlogTema/images/calisco/", newimagename);
 				var stream = new FileStream(location, FileMode.Create);
+
 				p.Calisco_Image.CopyTo(stream);
-				caladd.Calisco_Image = newimagename;
+				caladd.Calisco_Image = "/CoreBlogTema/images/calisco/"+ newimagename;
 			}
 			caladd.Calisco_Name = p.Calisco_Name;
 			cal.TAdd(caladd);

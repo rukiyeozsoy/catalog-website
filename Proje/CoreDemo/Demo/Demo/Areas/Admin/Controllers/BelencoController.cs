@@ -40,8 +40,9 @@ namespace Demo.Areas.Admin.Controllers
 				var newimagename = Guid.NewGuid() + extension;
 				var location = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/CoreBlogTema/images/belenco/",newimagename);
 				var stream=new FileStream(location, FileMode.Create);
+
 				p.Belenco_Image.CopyTo(stream);
-				beladd.Belenco_Image = newimagename;
+				beladd.Belenco_Image = "/CoreBlogTema/images/belenco/"+ newimagename;
 			}
 			beladd.Belenco_Name=p.Belenco_Name;
 			bel.TAdd(beladd);
