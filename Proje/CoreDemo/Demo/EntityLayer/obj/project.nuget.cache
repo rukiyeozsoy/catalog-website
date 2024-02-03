@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XOUI/8Wwmt6O+sbWDdlf3gV7Gk1Xv7DDP8fc0WS92wH0X8gQbq7t09KDkZEWLkJDR5x/asrCougA5w0KvolHBQ==",
+  "dgSpecHash": "EigzySvxQcvpmh6YxiM3NZD/sbg53XeRhOpTe9coHMyd2RgjzmpSyV+1BC7MRHjrCGmzl9d7wTIfSO6FpeHNEw==",
   "success": true,
-  "projectFilePath": "D:\\CSharpCode\\Catalon\\Proje\\CoreDemo\\Demo\\EntityLayer\\EntityLayer.csproj",
+  "projectFilePath": "D:\\BenimDenememGizli\\catalog-website\\Proje\\CoreDemo\\Demo\\EntityLayer\\EntityLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pymuz\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\pymuz\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
@@ -53,10 +53,7 @@
     "C:\\Users\\pymuz\\.nuget\\packages\\system.security.cryptography.xml\\4.5.0\\system.security.cryptography.xml.4.5.0.nupkg.sha512",
     "C:\\Users\\pymuz\\.nuget\\packages\\system.security.permissions\\4.5.0\\system.security.permissions.4.5.0.nupkg.sha512",
     "C:\\Users\\pymuz\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512",
-    "C:\\Users\\pymuz\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512",
-    "C:\\Users\\pymuz\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\pymuz\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\pymuz\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\pymuz\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

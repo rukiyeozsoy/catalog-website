@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hPPjzhYzMo/MZdSR28qhCnY+pJj9QsttUYhBXNYg4/gdAlY51H2oBud+00V/fWjBxUIAmCXya/Xwn2tqOpugCg==",
+  "dgSpecHash": "8Q/eYbYVa3MtWLGdyZpUirgAXMNaGBZlYkgZikHm0zz4unuSqmvwuj1vy6VuHw1ui5Gplsl4KJIAfyRdyaanOA==",
   "success": true,
-  "projectFilePath": "D:\\CSharpCode\\Catalon\\Proje\\CoreDemo\\Demo\\CoreLayer\\CoreLayer.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\pymuz\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\pymuz\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\pymuz\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
-  ],
+  "projectFilePath": "D:\\BenimDenememGizli\\catalog-website\\Proje\\CoreDemo\\Demo\\CoreLayer\\CoreLayer.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

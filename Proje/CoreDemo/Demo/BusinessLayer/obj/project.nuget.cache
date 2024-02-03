@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OLGwbqzlGZ9/D0IRN6bUZqLlZjpAn1YQg+LErQ4e9/vmPJyz8ZMpDoFNrobJdBKh32PXXRtHeRcof6/rcoV4Rw==",
+  "dgSpecHash": "vi/gIO6L9jABkLm8p2SmGmoWXSaV3YAlS3uVfym8dMTgR97XpIwovnq93oEF9cd0mgKYa22NdKco1eJJL5qnDQ==",
   "success": true,
-  "projectFilePath": "D:\\CSharpCode\\Catalon\\Proje\\CoreDemo\\Demo\\BusinessLayer\\BusinessLayer.csproj",
+  "projectFilePath": "D:\\BenimDenememGizli\\catalog-website\\Proje\\CoreDemo\\Demo\\BusinessLayer\\BusinessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pymuz\\.nuget\\packages\\fluentvalidation\\10.3.3\\fluentvalidation.10.3.3.nupkg.sha512",
     "C:\\Users\\pymuz\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.3\\fluentvalidation.aspnetcore.10.3.3.nupkg.sha512",
