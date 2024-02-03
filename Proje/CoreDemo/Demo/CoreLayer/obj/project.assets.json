@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BenimDenememGizli\\catalog-website\\Proje\\CoreDemo\\Demo\\CoreLayer\\CoreLayer.csproj",
+      "projectUniqueName": "D:\\CSharpCode\\Catalon\\Proje\\CoreDemo\\Demo\\CoreLayer\\CoreLayer.csproj",
       "projectName": "CoreLayer",
-      "projectPath": "D:\\BenimDenememGizli\\catalog-website\\Proje\\CoreDemo\\Demo\\CoreLayer\\CoreLayer.csproj",
+      "projectPath": "D:\\CSharpCode\\Catalon\\Proje\\CoreDemo\\Demo\\CoreLayer\\CoreLayer.csproj",
       "packagesPath": "C:\\Users\\pymuz\\.nuget\\packages\\",
-      "outputPath": "D:\\BenimDenememGizli\\catalog-website\\Proje\\CoreDemo\\Demo\\CoreLayer\\obj\\",
+      "outputPath": "D:\\CSharpCode\\Catalon\\Proje\\CoreDemo\\Demo\\CoreLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -61,6 +61,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

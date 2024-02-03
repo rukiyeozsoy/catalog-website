@@ -8610,11 +8610,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BenimDenememGizli\\catalog-website\\Proje\\CoreDemo\\Demo\\Demo\\Demo.csproj",
+      "projectUniqueName": "D:\\CSharpCode\\Catalon\\Proje\\CoreDemo\\Demo\\Demo\\Demo.csproj",
       "projectName": "Demo",
-      "projectPath": "D:\\BenimDenememGizli\\catalog-website\\Proje\\CoreDemo\\Demo\\Demo\\Demo.csproj",
+      "projectPath": "D:\\CSharpCode\\Catalon\\Proje\\CoreDemo\\Demo\\Demo\\Demo.csproj",
       "packagesPath": "C:\\Users\\pymuz\\.nuget\\packages\\",
-      "outputPath": "D:\\BenimDenememGizli\\catalog-website\\Proje\\CoreDemo\\Demo\\Demo\\obj\\",
+      "outputPath": "D:\\CSharpCode\\Catalon\\Proje\\CoreDemo\\Demo\\Demo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8635,14 +8635,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\BenimDenememGizli\\catalog-website\\Proje\\CoreDemo\\Demo\\BusinessLayer\\BusinessLayer.csproj": {
-              "projectPath": "D:\\BenimDenememGizli\\catalog-website\\Proje\\CoreDemo\\Demo\\BusinessLayer\\BusinessLayer.csproj"
+            "D:\\CSharpCode\\Catalon\\Proje\\CoreDemo\\Demo\\BusinessLayer\\BusinessLayer.csproj": {
+              "projectPath": "D:\\CSharpCode\\Catalon\\Proje\\CoreDemo\\Demo\\BusinessLayer\\BusinessLayer.csproj"
             },
-            "D:\\BenimDenememGizli\\catalog-website\\Proje\\CoreDemo\\Demo\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "D:\\BenimDenememGizli\\catalog-website\\Proje\\CoreDemo\\Demo\\DataAccessLayer\\DataAccessLayer.csproj"
+            "D:\\CSharpCode\\Catalon\\Proje\\CoreDemo\\Demo\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "D:\\CSharpCode\\Catalon\\Proje\\CoreDemo\\Demo\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "D:\\BenimDenememGizli\\catalog-website\\Proje\\CoreDemo\\Demo\\EntityLayer\\EntityLayer.csproj": {
-              "projectPath": "D:\\BenimDenememGizli\\catalog-website\\Proje\\CoreDemo\\Demo\\EntityLayer\\EntityLayer.csproj"
+            "D:\\CSharpCode\\Catalon\\Proje\\CoreDemo\\Demo\\EntityLayer\\EntityLayer.csproj": {
+              "projectPath": "D:\\CSharpCode\\Catalon\\Proje\\CoreDemo\\Demo\\EntityLayer\\EntityLayer.csproj"
             }
           }
         }

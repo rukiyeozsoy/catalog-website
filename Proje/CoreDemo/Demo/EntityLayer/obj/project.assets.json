@@ -1907,11 +1907,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BenimDenememGizli\\catalog-website\\Proje\\CoreDemo\\Demo\\EntityLayer\\EntityLayer.csproj",
+      "projectUniqueName": "D:\\CSharpCode\\Catalon\\Proje\\CoreDemo\\Demo\\EntityLayer\\EntityLayer.csproj",
       "projectName": "EntityLayer",
-      "projectPath": "D:\\BenimDenememGizli\\catalog-website\\Proje\\CoreDemo\\Demo\\EntityLayer\\EntityLayer.csproj",
+      "projectPath": "D:\\CSharpCode\\Catalon\\Proje\\CoreDemo\\Demo\\EntityLayer\\EntityLayer.csproj",
       "packagesPath": "C:\\Users\\pymuz\\.nuget\\packages\\",
-      "outputPath": "D:\\BenimDenememGizli\\catalog-website\\Proje\\CoreDemo\\Demo\\EntityLayer\\obj\\",
+      "outputPath": "D:\\CSharpCode\\Catalon\\Proje\\CoreDemo\\Demo\\EntityLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1964,6 +1964,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
