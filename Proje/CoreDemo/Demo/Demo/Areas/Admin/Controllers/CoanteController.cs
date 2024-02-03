@@ -62,11 +62,10 @@ namespace Demo.Areas.Admin.Controllers
 			{
 				var extension = Path.GetExtension(p.Coante_Image.FileName);
 				var newimagename = Guid.NewGuid() + extension;
-				var location = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/CoreBlogTema/images/coante/", newimagename);
+				var location = Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\CoreBlogTema\images\coante\", newimagename);
 				var stream = new FileStream(location, FileMode.Create);
-
 				p.Coante_Image.CopyTo(stream);
-				conadd.Coante_Image = "/CoreBlogTema/images/coante/" + newimagename;
+				conadd.Coante_Image = newimagename;
 			}
 			conadd.Coante_Name = p.Coante_Name;
 			conadd.Coante_Status = true;
