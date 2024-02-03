@@ -10,76 +10,71 @@ using Microsoft.Extensions.Hosting;
 
 namespace Demo
 {
-	public class Startup
-	{
-		public Startup(IConfiguration configuration)
-		{
-			Configuration = configuration;
-		}
+    public class Startup
+    {
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
 
-		public IConfiguration Configuration { get; }
-		public void ConfigureServices(IServiceCollection services)
-		{
-			services.AddDbContext<Context>();
-			services.AddControllersWithViews();
+        public IConfiguration Configuration { get; }
 
-			services.AddAuthentication(
-				CookieAuthenticationDefaults.AuthenticationScheme)
-				.AddCookie(x => {
-					x.LoginPath = "/About/Index"; });
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddDbContext<Context>();
+            services.AddControllersWithViews();
 
-			
-			services.AddSession();
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(x => { x.LoginPath = "/Belenco/Index"; });
 
-			services.AddDbContext<Context>();
-			services.AddControllersWithViews();
-			services.AddMvc(config =>
-			{
-				var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
-				config.Filters.Add(new AuthorizeFilter(policy));
-			}
-			);
-			services.AddAuthorization();
-			services.AddSession();
-			services.AddAuthorization(options =>
-			{
-				options.AddPolicy("RequireLoggedIn", policy =>
-				{
-					policy.RequireAuthenticatedUser();
-				});
-			});
-		}
-		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-		{
-			if (env.IsDevelopment())
-			{
-				app.UseDeveloperExceptionPage();
-			}
-			else
-			{
-				app.UseExceptionHandler("/Home/Error");
-				app.UseHsts();
-			}
+            services.AddSession();
 
-			app.UseStatusCodePagesWithReExecute("/ErrorPage/Error1", "?code={0}");
+            services.AddMvc(config =>
+            {
+                var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+                config.Filters.Add(new AuthorizeFilter(policy));
+            });
 
-			app.UseHttpsRedirection();
-			app.UseStaticFiles();
-			app.UseRouting();
-			app.UseSession();
-			app.UseAuthentication();
-		
-			app.UseAuthorization();
-			app.UseEndpoints(endpoints =>
-			{
-				endpoints.MapControllerRoute(
-					name: "areas",
-					pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
-			);
-				endpoints.MapControllerRoute(
-					name: "default",
-					pattern: "{controller=Home}/{action=Index}/{id?}");
-			});
-		}
-	}
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("RequireLoggedIn", policy =>
+                {
+                    policy.RequireAuthenticatedUser();
+                });
+            });
+        }
+
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Home/Error");
+                app.UseHsts();
+            }
+
+            app.UseStatusCodePagesWithReExecute("/ErrorPage/Error1", "?code={0}");
+
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+            app.UseRouting();
+            app.UseSession();
+            app.UseAuthentication();
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "areas",
+                    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+                );
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
+            });
+        }
+    }
 }
