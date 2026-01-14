@@ -14,7 +14,6 @@ using X.PagedList;
 
 using System.Web;
 using Microsoft.AspNetCore.Authorization;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace Demo.Areas.Admin.Controllers
 {
@@ -73,7 +72,7 @@ namespace Demo.Areas.Admin.Controllers
 				var stream = new FileStream(location, FileMode.Create);
 				
 				p.Granit_Image.CopyTo(stream);
-				graadd.Granit_Image = "/CoreBlogTema/images/granit/" + newimagename;
+				graadd.Granit_Image = newimagename;
 			}
 			graadd.Granit_Name = p.Granit_Name;
 			gra.TAdd(graadd);

@@ -65,9 +65,8 @@ namespace Demo.Areas.Admin.Controllers
 				var newimagename = Guid.NewGuid() + extension;
 				var location = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/CoreBlogTema/images/cimstone/", newimagename);
 				var stream = new FileStream(location, FileMode.Create);
-
 				p.Cimstone_Image.CopyTo(stream);
-				beladd.Cimstone_Image = "/CoreBlogTema/images/cimstone/"+newimagename;
+				beladd.Cimstone_Image = newimagename;
 			}
 			beladd.Cimstone_Name = p.Cimstone_Name;
 			cim.TAdd(beladd);
